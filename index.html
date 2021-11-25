@@ -10,8 +10,24 @@
     <base href="/Blazor_ProofOfConcept_publish/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
+    <link href="css/font-styles.css" rel="stylesheet">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <!--<link href="css/custom.css" rel="stylesheet">-->
     <link href="BlazorAppWasm2.styles.css" rel="stylesheet" />
     <style>
+        .icon::before {
+            font-size: 30px;
+        }
+
+        .icon-medium::before {
+            font-size: 24px;
+        }
+
+        .icon-small::before {
+            font-size: 16px;
+        }
+
+
         .lds-ellipsis {
             display: inline-block;
             position: relative;
@@ -81,7 +97,7 @@
     </style>
 </head>
 
-<body>
+<body style="-webkit-touch-callout: none; touch-action: none;">
     <div id="app">
         <div style="position: absolute; left: 0px; right:0px; top:0px; bottom: 0px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
 
@@ -99,6 +115,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M224.66 46.7117L224.669 46.6999L229.051 42.3192C233.966 46.199 241.124 45.8729 245.671 41.3292C250.204 36.7885 250.533 29.6276 246.658 24.7046L246.649 24.7164L251.161 20.2024C257.418 27.5855 257.063 38.6736 250.094 45.6477C243.132 52.6159 232.043 52.9686 224.66 46.7117ZM223.505 19.0494C230.47 12.0782 241.556 11.7255 248.942 17.9853L244.421 22.5172L244.424 22.5053C239.509 18.7352 232.434 19.0968 227.94 23.5961C223.44 28.0983 223.078 35.1791 226.85 40.0903L222.462 44.4799L222.447 44.4947C216.19 37.1056 216.546 26.0176 223.505 19.0494Z" fill="#3C434B" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.45596 46.8272L7.47077 46.8153L11.731 42.5562C16.5127 46.3382 23.4867 46.021 27.9069 41.6018C28.7098 40.7986 29.3764 39.9094 29.9096 38.9609H17.754L24.0407 32.8641H34.4958H37.568C37.565 37.5471 35.7845 42.2331 32.2175 45.8046C25.439 52.5861 14.6433 52.927 7.45596 46.8272ZM6.34794 19.9236C11.9621 14.307 20.3315 13.1066 27.2581 16.3966C27.261 16.3966 27.2611 16.3966 27.2611 16.3936C27.3025 16.4114 27.341 16.4321 27.3796 16.4558C28.1617 16.8382 28.9231 17.2828 29.7497 17.8607C29.803 17.8933 29.8622 17.9348 29.9156 17.9793C30.2533 18.2134 30.5851 18.4683 30.9939 18.8122C31.0236 18.8359 31.0502 18.8596 31.0799 18.8803L26.6626 23.3025L26.6774 23.2906C26.6182 23.2432 26.5589 23.2047 26.4997 23.1632C26.3752 23.0535 26.2478 22.9587 26.2241 22.9587C25.7472 22.6119 25.2524 22.3185 24.7399 22.0725C20.1774 19.7784 14.4655 20.5372 10.6585 24.3488C6.28572 28.7235 5.93021 35.5998 9.59201 40.3836L5.31399 44.6606L5.3051 44.6695C-0.777155 37.4849 -0.427566 26.6992 6.34794 19.9236Z" fill="#3C434B" />
             </svg>
+            <div style=" color: red;">proof of concept</div>
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <div>loading...</div>
         </div>
